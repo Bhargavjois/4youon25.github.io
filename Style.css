@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900');
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.header{
+  margin-top: -30px;
+  width: 100vw;
+  height: 65px;
+  background: linear-gradient(90deg,#ff0aa1,#1c42ff);
+  text-align: center;
+}
+
+.header h4{
+  margin-bottom: -20px;
+  color:blue;
+  font-size: 24px;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.header p{
+  margin-top: -5px;
+  font-size: 38px;
+  color:#ff0aa1;
+  font-family: 'Merienda';
+  -webkit-text-stroke: 1px #fff;
+  -webkit-text-fill-color: none;
+}
+
+.slider
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 90vh;
+	overflow: hidden;
+	background: pink;
+}
+.slider .slide
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	visibility: hidden;
+	opacity: 0;
+	animation: slider 40s linear infinite;
+}
+.slider .slide:nth-child(1)
+{
+	animation-delay: 0s;
+}
+.slider .slide:nth-child(2)
+{
+	animation-delay: 8s;
+}
+.slider .slide:nth-child(3)
+{
+	animation-delay: 16s;
+}
+.slider .slide:nth-child(4)
+{
+	animation-delay: 24s;
+}
+.slider .slide:nth-child(5)
+{
+	animation-delay: 32s;
+}
+.slider .slide img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.slider .slide .content
+{
+	position: absolute;
+	bottom: 0px;
+	left:0px;
+	background-color:#ff0aa1;
+	padding: 20px;
+	padding-top: 10px;
+	z-index: 1;
+	max-width: 100vw;
+	max-height: 100px;
+}
+
+.dear::after{
+  content:"";
+  animation: change2 6s linear infinite;
+  color: Orange;
+  font-size:14px;
+}
+
+.slider .slide .content h2
+{
+	margin: 0;
+	padding: 0;
+	font-size: 28px;
+	color:#1c42ff;
+}
+.slider .slide .content p
+{
+	margin: 10px 0 0;
+	padding: 0;
+	font-size:12px;
+	color:#23089e;
+}
+.after{
+  position: relative;
+  margin-top:40px;
+}
+.center
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+ul
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+ul li
+{
+	list-style: none;
+	color: orange;
+	font-size: 6em;
+	font-weight: bold;
+	letter-spacing: 10px;
+	opacity: 0;
+}
+
+.S{
+  animation: smile 1s linear;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.M{
+
+  animation: smile 1s linear;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+.I{
+  animation: smile 1s linear;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+.L{
+  animation: smile 1s linear;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+.E{
+  animation: smile 1s linear;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+.wish{
+  margin-top: 77px;
+  background-color:#ff08a8;
+  color:blue;
+  text-align: center;
+}
+
+.blink{
+  font-size: 20px;
+  color: pink;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke: 1px #ff0aa1;
+  text-align: center;
+}
+
+.blink::after{
+  content:"";
+  color: blue;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke: 1px blue;
+  font-size: 50px;
+  animation: change 10s linear infinite;
+}
+
+footer{
+  color: #ff0aa1;
+  background:#ffcfec;
+  text-align: center;
+  bottom: 0;
+  margin-bottom:-10px;
+  height: 50px;
+}
+
+.name{
+  color: blue;
+  -webkit-text-stroke: 1px orange;
+}
+
+
+@keyframes slider
+{
+	0%
+	{
+		visibility: hidden;
+		opacity: 0;
+	}
+	2%
+	{
+		visibility: visible;
+		opacity: 1;
+	}
+	40%
+	{
+		visibility: visible;
+		opacity: 1;
+	}
+	42%,100%
+	{
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+
+@keyframes change{
+  0%{
+    content:"happiness.";
+  }
+  20%{
+    content:"joy.    ";
+  }
+  40%{
+    content:"fun.    ";
+  }
+  60%{
+    content:"health.";
+  }
+  80%{
+    content:"peace.  ";
+  }
+  100%{
+    content:"happiness.";
+  }
+}
+
+@keyframes change2{
+  0%{
+    content:"Sister.";
+  }
+  20%{
+    content:"Best Friend.";
+  }
+  40%{
+    content:"Closest to the ❤️.";
+  }
+  60%{
+    content:"Happiness.";
+  }
+  80%{
+    content:"Peace.";
+  }
+  100%{
+    content:"Sister.";
+  }
+}
+
+@keyframes smile {
+  0%{
+    opacity: 0;
+  }
+  
+  25%{
+    opacity: 0.25;
+  }
+  
+  50%{
+    opacity: 0.5;
+  }
+  
+  75%{
+    opacity: 0.75;
+  }
+ 
+  100%{
+    opacity: 1;
+  }
+}
